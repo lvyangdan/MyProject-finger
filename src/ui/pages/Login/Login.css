@@ -3,16 +3,18 @@ body{
 }
 .login .login-title{
 	margin-top:50px;
+	font-size: 20px;
 	color:white;
 	text-align: center;
 }
 .login .login-bigtitle{
 	color:white;
+	font-size:40px;
 	padding-top:30px;
 	text-align: center;
 }
 .login .login-subtitle{
-	font-size:12px;
+	font-size:14px;
 	color:white;
 	text-align: center;
 	margin-bottom:80px;
@@ -24,15 +26,17 @@ body{
 }
 .login .login-form input{
 	width: 240px;
-	line-height: 30px;
+	line-height: 40px;
 	padding-left:20px;
+	font-size:20px;
 	display: block;
 	margin:0 auto;
 }
 .login .login-form button{
 	width: 265px;
 	display: block;
-	line-height: 30px;
+	font-size:20px;
+	line-height: 40px;
 	margin:0 auto;
 	background-color: white;
 	margin-top:30px;
