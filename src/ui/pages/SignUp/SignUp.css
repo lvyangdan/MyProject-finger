@@ -1,0 +1,46 @@
+body{
+	background: #fc5b85;
+}
+.signup .signup-title{
+	margin-top:50px;
+	color:white;
+	text-align: center;
+}
+.signup .signup-bigtitle{
+	color:white;
+	padding-top:30px;
+	text-align: center;
+}
+.signup .signup-subtitle{
+	font-size:12px;
+	color:white;
+	text-align: center;
+	margin-bottom:80px;
+}
+.signup .signup-form{
+	display: block;
+	width: 300px;
+	margin:0 auto;
+}
+.signup .signup-form input{
+	width: 240px;
+	line-height: 30px;
+	padding-left:20px;
+	display: block;
+	margin:0 auto;
+}
+.signup .signup-form button{
+	width: 265px;
+	display: block;
+	line-height: 30px;
+	margin:0 auto;
+	background-color: white;
+	margin-top:30px;
+}
+.signup a{
+	display: block;
+	margin-top:40px;
+	text-align: center;
+	font-size:14px;
+	color:blue;
+}
