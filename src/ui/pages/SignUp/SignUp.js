@@ -11,8 +11,7 @@ class SignUp extends React.Component{
         let password = this.passwordInput.value
         let data = {username, password} 
 	axios.post(`${setting.host}/user/signup`, data).then( res => {
-      console.log(res.data)
-      // this.props.history.push('/dashboard')
+      this.props.history.push('/dashboard')
       this.props.dispatch({ type: 'SIGN_IN', username: res.data.username })
       localStorage.setItem('userId', res.data.userId)
     }).catch(err => {
