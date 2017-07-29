@@ -7,6 +7,7 @@ import SignUp from './ui/pages/SignUp/SignUp'
 import Login from './ui/pages/Login/Login'
 import setting from './setting'
 import axios from 'axios'
+import Sidebar from './ui/Shared/Sidebar/Sidebar'
 import './App.css';
 
 class App extends Component {
