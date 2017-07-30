@@ -5,24 +5,28 @@ import store from './redux/store'
 import Home from './ui/pages/Home/Home'
 import SignUp from './ui/pages/SignUp/SignUp'
 import Login from './ui/pages/Login/Login'
-import setting from './setting'
-import axios from 'axios'
 import Sidebar from './ui/Shared/Sidebar/Sidebar'
+import Dashboard from './ui/pages/Dashboard/Dashboard'
+import Dish from './ui/pages/Dish/Dish'
+import Cart from './ui/pages/Cart/Cart'
+import Profile from './ui/pages/Profile/Profile'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div>
           <Router>
-            <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/signup' component={SignUp} />
-              <Route path='/login'component={Login} />
-            </Switch>
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path='/signup' component={SignUp} />
+                <Route path='/login'component={Login} />
+                <Route path='/dashboard' component={Dashboard}/>
+                <Route path='/profile' component={Profile}/>
+                <Route path='/dish' component={Dish}/>
+                <Route path='/cart' component={Cart}/>
+              </Switch>
           </Router>
-        </div>
       </Provider>
     );
   }

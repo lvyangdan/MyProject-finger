@@ -9,8 +9,10 @@ class SignUp extends React.Component{
 		e.preventDefault();
 		let username = this.usernameInput.value
         let password = this.passwordInput.value
-        let data = {username, password} 
+        let email=this.email.value
+        let data = {username, password,email} 
 	axios.post(`${setting.host}/user/signup`, data).then( res => {
+		console.log(data)
       this.props.history.push('/dashboard')
       this.props.dispatch({ type: 'SIGN_IN', username: res.data.username })
       localStorage.setItem('userId', res.data.userId)
@@ -26,7 +28,7 @@ class SignUp extends React.Component{
 			<p className='signup-subtitle'>连接一个个小而确定的幸福</p>
 			<form onSubmit={this.signup} className='signup-form'>
 				<input ref={value => this.usernameInput = value} type="text" placeholder='登录名'/>
-				<input type="text" placeholder='email'/>
+				<input ref={value=>this.email=value} type="text" placeholder='email'/>
 				<input ref={value => this.passwordInput = value} type="text" placeholder='密码'/>
 				<input type="text" placeholder='再输入一次'/>
 				<button type='submit'>注册</button>
